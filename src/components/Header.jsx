@@ -121,7 +121,7 @@ const Header = ({
           }}
           className={selectedCategory === null ? styles.active : ''}
         >
-          Все товары
+          All
         </a>
         {categories.map((category) => (
           <a
