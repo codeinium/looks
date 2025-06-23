@@ -44,7 +44,7 @@ L🔍️oks — это учебный e-commerce проект, реализую�
 
 ## 🖥️ Deploy
 
-![link](https://codeinium.github.io/looks/)
+[you can see](https://codeinium.github.io/looks/)
 
 ---
 
