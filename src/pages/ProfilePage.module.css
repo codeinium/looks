@@ -1,0 +1,250 @@
+.profilePage {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionContent {
+  padding: 1.5rem;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.productItem {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.productImage {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.productTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.logoutButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  color: var(--color-text-main);
+  cursor: pointer;
+}
+
+.userNameInput {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  padding: 0;
+  color: var(--color-text-main);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-primary);
+  outline: none;
+  width: 100%;
+}
+
+.userEmail {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.favoritesSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.favoritesList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.itemInfo {
+  flex-grow: 1;
+}
+
+.itemTitle {
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.itemPrice {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.removeButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  padding: 8px;
+}
+
+.removeButton:hover {
+  color: var(--color-danger);
+}
+
+/* Order History */
+.orderHistory {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.orderHistory h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ordersList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.orderItem {
+  background-color: #f9fafb;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid var(--color-border);
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.orderBody {
+  padding: 1rem;
+}
+
+.orderProduct {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.orderProduct:not(:last-child) {
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.orderFooter {
+  padding: 1rem;
+  text-align: right;
+  border-top: 1px solid var(--color-border);
+  background-color: #f3f4f6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+}

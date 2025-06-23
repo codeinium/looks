@@ -1,0 +1,14 @@
+.homePage {
+  padding: 2rem 4rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .homePage {
+    padding: 1.5rem 1rem;
+  }
+}

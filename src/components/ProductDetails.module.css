@@ -1,0 +1,119 @@
+.details {
+  display: flex;
+  gap: 2rem;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  word-break: break-word;
+}
+
+.category {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin: 0 0 1.5rem;
+  text-transform: capitalize;
+}
+
+.description {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cartButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cartButton:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.favoriteButton {
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.favoriteButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 300px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
