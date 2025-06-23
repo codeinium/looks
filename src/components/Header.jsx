@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 import { useState } from 'react';
+import logo from '../assets/logo.svg';
 
 const CartIcon = () => (
   <svg
@@ -108,7 +109,7 @@ const Header = ({
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link to='/'>
-          Digital <strong>Kafedri</strong>
+          <img src={logo} alt='Digital Kafedri logo' style={{ height: 32, width: 'auto', display: 'block' }} />
         </Link>
       </div>
 
